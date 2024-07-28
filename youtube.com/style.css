@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: rgb(14, 14, 14);
+}
+
+/* الادخال والبحث */
+.search_and_logo {
+  display: flex;
+  flex-wrap: wrap;
+display: flex;
+
+justify-content: center;
+align-items: center;
+  height: 55px;
+  margin-top: 15px;
+
+}
+
+.search_section {
+  width: 90%;
+  direction: rtl;
+margin: auto;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.search_section .search_input {
+  direction: rtl;
+  height: 30px;
+  width: 600px;
+  background-color: rgb(59, 59, 59);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: rgb(14, 14, 14);
+  border-top: rgb(14, 14, 14);
+  border-right: rgb(151, 151, 151);
+  padding-right: 10px;
+  color: white;
+  font-size: medium;
+}
+
+.search_section .search_button {
+  background-color: rgb(58, 58, 58);
+  width: 70px;
+  height: 30px;
+  border-bottom: rgb(14, 14, 14);
+  border-top: rgb(14, 14, 14);
+  border-left: rgb(151, 151, 151);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+
+/* لوجو اليوتيوب */
+.logo {
+  width: 130px;
+  height: 50px;
+}
+
+
+
+/* القايمة اللي هي علي اليمين*/
+.right_list {
+
+  margin: 0px 30px 0 0;
+float: right;
+
+}
+
+.right_list .rl {
+  list-style: none;
+  padding: 7px 9px 0 0;
+  height: 37px;
+  width: 180px;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+.right_list .rl:hover {
+  height: 37px;
+  width: 180px;
+  background-color: rgb(135, 135, 135);
+  border-radius: 10px;
+}
+
+
+.a_rl {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+
+hr {
+  color: rgb(37, 37, 37);
+  width: 180px;
+  margin: 10px 0px 10px 0px;
+}
+
+h6 {
+  padding: 7px 9px 0 0;
+  font-size: medium;
+  color: white;
+  height: 35px;
+  width: 180px;
+}
+
+/* القايمة اللي هي فالنص  */
+.mid_list {
+ 
+ width: 80%;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+margin: auto;
+
+}
+
+.mid_list .ml {
+  list-style: none;
+  text-align: center;
+  transition: background-color 0.5s;
+  margin: 10px 0 0 0;
+}
+
+.a_ml {
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  padding: 7px 30px;
+  border-radius: 10px;
+  background-color: rgb(49, 49, 49);
+  font-weight: bold;
+
+}
+
+.a_ml:hover {
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  padding: 7px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* الفيديوهات */
+.videos_section {
+  display: flex;
+
+
+
+}
+
+.video1{
+width: 60%;
+  display: flex;
+
+  flex-wrap: wrap;
+margin: auto;
+
+}
+.video {
+  height: 180px;
+  width: 250px;
+  background-color: rgb(71, 71, 71);
+  margin: 20px 0px 60px 10px;
+  border-radius: 15px;
+  transition: text-shadow 0.5s;
+}
+
+.video:hover {
+  box-shadow: 2px 1px 10px gray;
+}
+
+p {
+  direction: rtl;
+  padding-top: 200px;
+  color: white;
+  font-size: small;
+
+
+}
+
+
+@media (max-width: 600px) {
+
+  body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .search_and_logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  .search_section {
+    width: 250px;
+  }
+
+  .mid_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+width: 90%;
+    margin-top: 15px;
+justify-content: center;
+align-items: center;
+
+  }
+
+
+  .video1 {
+  width: 100%;
+    float: none;
+    display: flex;
+    flex-direction: column;
+
+margin-right: 0px;
+    margin-top: 40px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+
+    
+  }
+
+  .video{
+  
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 20px 0px 60px 0px;   
+
+  }
+
+  .right_list {
+    display: none;
+  }
+
+  p {
+    direction: rtl;
+    padding-top: 200px;
+    color: white;
+    font-size: small;
+    text-align: center;
+  }
+ 
+  
+.a_ml {
+  font-size: small;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.a_ml:hover {
+  padding: 5px 15px;
+  font-weight: bold;
+  
+}
+
+}
